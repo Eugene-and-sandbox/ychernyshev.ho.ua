@@ -1,0 +1,197 @@
+html {
+    background: #222222;
+}
+
+/* Flex */
+.display-flex {
+    display: flex;
+}
+
+.justify-content-end {
+  justify-content: flex-end;
+}
+
+/*Position*/
+.position-relative {
+    position: relative;
+}
+
+.top-0 {
+    top: 0rem;
+}
+
+/* Margine */
+.mt-2 {
+    margin-top: 2rem;
+}
+
+.mt-3 {
+    margin-top: 3rem;
+}
+
+.mt-4 {
+    margin-top: 4rem;
+}
+
+.mt-5 {
+    margin-top: 5rem;
+}
+
+.mt-10 {
+    margin-top: 10rem;
+}
+
+.mt--10 {
+    margin-top: -20rem;
+}
+
+.mt--28 {
+    margin-top: -28rem;
+}
+
+.ml-1 {
+    margin-left: 1rem;
+}
+
+.ml-2 {
+    margin-left: 2rem;
+}
+
+/* Padding */
+.p-1 {
+    padding: 1rem 1rem;
+}
+
+/* Width */
+.w-15 {
+    width: 15rem;
+}
+
+.w-20 {
+    width: 20rem;
+}
+
+.w-26 {
+    width: 26rem;
+}
+
+.w-auto {
+    width: auto;
+}
+/* Height */
+.h-01 {
+    height: 1px;
+}
+
+.h-15 {
+    height: 15rem;
+}
+
+.h-20 {
+    height: 20rem;
+}
+
+.h-26 {
+    height: 26rem;
+}
+
+/* Background */
+.bg-amber {
+    background: #ffc107;
+}
+
+.bg-grey-2 {
+    background: #3b3939;
+}
+
+/* Border */
+.border-none {
+    border: none;
+}
+
+/* Radius */
+.border-radius-1 {
+    border-radius: 1rem;
+}
+
+/* Color */
+.color-blue-1 {
+    color: #1769aa;
+}
+
+.color-grey-1 {
+    color: #b8afaf;
+}
+
+.color-white-default {
+    color: #ffffff;
+}
+
+.color-amber {
+    color: #ffc107;
+}
+
+/* Text Transform */
+.tt-upper {
+    text-transform: uppercase;
+}
+
+/* Text Align */
+.ta-justify {
+    text-align: justify;
+}
+
+/* Link */
+.text-decoration-none {
+    text-decoration: none;
+}
+
+.text-decoration-none:hover {
+    border-bottom: .1rem solid;
+}
+
+/* Font size */
+.fs-1-2 {
+    font-size: 1.2rem;
+}
+
+.fs-1-5 {
+    font-size: 1.5rem;
+}
+
+
+/* Line Height */
+.line-height-1 {
+    line-height: 1rem;
+}
+
+.line-height-2 {
+    line-height: 2rem;
+}
+
+.line-height-2-5 {
+    line-height: 2.5rem;
+}
+
+/* Word Spacing*/
+.ws-5 {
+    word-spacing: .5rem;
+}
+
+/* Font Weight */
+.fw-bold {
+    font-weight: bold;
+}
+
+/*z-index*/
+.zindex-auto {
+    z-index: auto;
+}
+
+.zindex-0 {
+    z-index: 0;
+}
+
+.zindex--1 {
+    z-index: -1;
+}

@@ -1,0 +1,7 @@
+.simple-menu-link {
+    text-decoration: none;
+}
+
+.simple-menu-link:hover {
+    border-bottom: 1px solid;
+}

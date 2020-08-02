@@ -1,0 +1,8 @@
+.a-picture {
+    background: url("../../images/personal-photo-full.png") no-repeat;
+    background-size: 100%;
+}
+
+.a-picture-border {
+    border: .3rem solid #ffc107;
+}
