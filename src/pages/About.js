@@ -1,5 +1,6 @@
 import React from "react";
 import AboutStyles from "./css/About.css";
+import defStyles from '../css/default-styles.css';
 import Grid from "@material-ui/core/Grid";
 import { Button } from "react-bootstrap";
 import { makeStyles } from "@material-ui/core";
@@ -25,8 +26,8 @@ export default function About() {
         <Grid item xs={2}></Grid>
         <Grid item xs={3}>
           <div>
-            <div className="mt-2 ml-1 w-26 h-26 a-picture-border"></div>
-            <div className="a-picture mt--28 w-26 h-26"></div>
+            <div className="mt-2 ml-1 w-26 h-26 border-3 color-amber"></div>
+            <div className="personal-photo mt--28 w-26 h-26"></div>
           </div>
         </Grid>
         <Grid item xs={5} className="fs-1-2 color-grey-1 line-height-2-5">
@@ -201,7 +202,7 @@ export default function About() {
                 <small>February - June 2019</small>
                 <div className="fs-1-2 line-height-2">
                   <p className=" tt-upper color-white-default ws-5">
-                  PHP Junior Developer -{" "} 
+                  PHP Junior Developer -{" "}
                     <span className="fw-bold">
                         skill up
                     </span>

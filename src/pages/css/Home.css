@@ -1,0 +1,18 @@
+body {
+  background: white;
+}
+
+/* Opacity */
+.opacity-50 {
+  background: rgba(67, 89, 105, .5);
+}
+
+.image-code {
+  background: url(../../images/home-bg-light.png) no-repeat;
+  background-size: 100%;
+}
+
+.image-author {
+  background: url(../../images/personal-photo.png) no-repeat;
+  background-size: 100%;
+}
