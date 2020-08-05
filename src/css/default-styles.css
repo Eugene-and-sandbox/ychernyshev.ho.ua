@@ -118,6 +118,13 @@
     padding: .7rem 3rem;
 }
 
+.p-07-3-5 {
+    padding: .7rem 3.8rem;
+}
+.p-04-1 {
+    padding: .5rem 1rem;
+}
+
 .p-1 {
     padding: 1rem 1rem;
 }
@@ -139,6 +146,18 @@
 }
 
 /* Width */
+.w-02 {
+  width: .2rem;
+}
+
+.w-5 {
+    width: 5rem;
+}
+
+.w-10 {
+    width: 10rem;
+}
+
 .w-15 {
     width: 15rem;
 }
@@ -176,7 +195,15 @@
 }
 /* Height */
 .h-01 {
-    height: 1px;
+    height: .09rem;
+}
+
+.h-5 {
+    height: 5rem;
+}
+
+.h-10 {
+    height: 10rem;
 }
 
 .h-15 {
@@ -224,6 +251,10 @@
     background: #3b3939;
 }
 
+.bg-grey-3 {
+    background: #6b6868;
+}
+
 .bg-red-1 {
   background: #840B00;
 }
@@ -234,6 +265,42 @@
 
 .bg-white-1 {
   background: #F9F9FF;
+}
+
+.bg-purple-1 {
+  background: #3B1972;
+}
+
+.bg-purple-2 {
+  background: #541fa9;
+}
+
+.bg-purple-3 {
+  background: #33067b;
+}
+
+.bg-purple-4 {
+  background: #7a37e4;
+}
+
+.bg-purple-5 {
+  background: #825bc1;
+}
+
+.bg-purple-6 {
+  background: #190f29;
+}
+
+.bg-purple-7 {
+  background: #c3a2f7;
+}
+
+.bg-purple-8 {
+  background: #402a62;
+}
+
+.bg-purple-9 {
+  background: #4400b0;
 }
 
 .bg-blue-g {
@@ -257,6 +324,10 @@
   border: .3rem solid #BCB6AE;
 }
 
+.border-grey {
+  border: .01rem solid #A5A09A;
+}
+
 /* Radius */
 .border-radius-1 {
     border-radius: 1rem;
@@ -275,12 +346,24 @@
     color: #b8afaf;
 }
 
+.color-grey-2 {
+    color: #A5A09A;
+}
+
+.color-grey-3 {
+  color: #6b6868;
+}
+
 .color-white-default {
     color: #ffffff;
 }
 
 .color-amber {
     color: #ffc107;
+}
+
+.color-purple-1 {
+  color: #3B1972;
 }
 
 /* Text Transform */
@@ -295,6 +378,10 @@
 
 .ta-center {
   text-align: center;
+}
+
+.ta-right {
+  text-align: right;
 }
 
 /* Link */
@@ -321,6 +408,10 @@
 
 .fs-2-5 {
   font-size: 2.5rem;
+}
+
+.fs-3 {
+  font-size: 3rem;
 }
 
 /* Line Height */
@@ -386,6 +477,10 @@ button::-moz-focus-inner {
   border: 0 !important;
 }
 
+textarea:focus, input:focus{
+outline: none;
+}
+
 .box-shadow-purple {
   box-shadow: .2rem .2rem .2rem #473BD9;
 }
@@ -402,4 +497,9 @@ button::-moz-focus-inner {
 .box-shadow-amber:active {
   transition: .3s;
   box-shadow: .1rem .1rem .1rem #ffa000;
+}
+
+/* Textarea */
+textarea {
+  resize: none;
 }

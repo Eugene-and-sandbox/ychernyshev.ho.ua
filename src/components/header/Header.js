@@ -6,7 +6,9 @@ import {BrowserRouter as Router, Switch, Route} from 'react-router-dom';
 // Pages
 import Home from '../../pages/Home';
 import About from '../../pages/About';
+import Resume from '../../pages/Resume';
 import Contacts from '../../pages/Contacts';
+
 
 const menu =[
     {name: "Home", link: "/"},
@@ -29,7 +31,7 @@ export default class header extends Component {
                       <a href="/" className="simple-menu-link color-blue-1 fs-1-5">Home</a>
                       <a href="/about" className="ml-1 simple-menu-link color-blue-1 fs-1-5">About</a>
                       <a href="" className="ml-1 simple-menu-link color-blue-1 fs-1-5">Technologes</a>
-                      <a href="" className="ml-1 simple-menu-link color-blue-1 fs-1-5">Resume</a>
+                      <a href="/resume" className="ml-1 simple-menu-link color-blue-1 fs-1-5">Resume</a>
                       <a href="" className="ml-1 simple-menu-link color-blue-1 fs-1-5">Source code</a>
                       <a href="" className="ml-1 simple-menu-link color-blue-1 fs-1-5">Ny blog</a>
                       <a href="/contacts" className="ml-1 simple-menu-link color-blue-1 fs-1-5">Contacts</a>
@@ -42,6 +44,7 @@ export default class header extends Component {
               <Switch>
                 <Route exact path="/" component={Home}/>
                 <Route exact path="/about" component={About}/>
+                <Route exact path="/resume" component={Resume}/>
                 <Route exact path="/contacts" component={Contacts}/>
               </Switch>
             </Router>

@@ -123,7 +123,7 @@ export default function About() {
       <Grid container className="mt-3">
         <Grid xs={2}></Grid>
         <Grid item xs={8}>
-          <hr className="w-auto h-01 bg-grey-2 border-none"></hr>
+          <hr className="w-auto h-01 bg-grey-2 border-none" />
         </Grid>
         <Grid xs={2}></Grid>
       </Grid>
