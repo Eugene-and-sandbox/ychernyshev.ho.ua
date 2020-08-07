@@ -22,11 +22,11 @@ export default function About() {
   console.log(classes);
   return (
     <>
-      <Grid container className="mt-5">
+      <Grid container className="mt-5 bg-white-1">
         <Grid item xs={2}></Grid>
         <Grid item xs={3}>
           <div>
-            <div className="mt-2 ml-1 w-26 h-26 border-3 color-amber"></div>
+            <div className="mt-2 ml-1 w-26 h-26 border-3 color-purple"></div>
             <div className="personal-photo mt--28 w-26 h-26"></div>
           </div>
         </Grid>
@@ -109,12 +109,10 @@ export default function About() {
           {/* // */}
           <Grid container>
             <Grid item xs={12}>
-              <Button
-                variant="warning"
-                className="mt-3 p-1 bg-amber border-none fs-1-2"
-              >
-                DOWNLOAD MY CV
-              </Button>{" "}
+                <Button variant="outline-primary" className="mt-3 p-07-3 bg-amber-g border-none color-white-default fs-1 cursor-pointer box-shadow-amber transition-3">
+                    View CV
+                </  Button>{' '}
+                <div className="mt-4"></div>
             </Grid>
           </Grid>
         </Grid>
@@ -213,6 +211,89 @@ export default function About() {
           </Grid>
         </Grid>
         <Grid item xs={2}></Grid>
+          <Grid container>
+              <Grid item xs={2}></Grid>
+              <Grid item xs={8} className="tt-upper">
+                  <div className="position-relative">
+                      <Grid container>
+                          <Grid item xs={2} className="ml--2">
+                              <div className="display-flex justify-content-center align-items-center w-10 h-10 border-radius-50 bg-purple-1 color-white-default ta-center">
+                                  <div className="line-height-05 fs-1-5">
+                                      <p>html/css</p>
+                                      <p className="fs-2 fw-bold">90%</p>
+                                  </div>
+                              </div>
+                          </Grid>
+                          <Grid item xs={2}>
+                              <div className="display-flex justify-content-center align-items-center position-absolute left-9 w-10 h-10 border-radius-50 bg-purple-2 color-white-default ta-center">
+                                  <div className="line-height-05 fs-1-5">
+                                      <p>js</p>
+                                      <p className="fs-3">60%</p>
+                                  </div>
+                              </div>
+                          </Grid>
+                          <Grid item xs={2}>
+                              <div className="display-flex justify-content-center align-items-center w-10 h-10 border-radius-50 bg-purple-3 color-white-default ta-center">
+                                  <div className="line-height-05 fs-1-5">
+                                      <p>bootstrap</p>
+                                      <p className="fs-2">60%</p>
+                                  </div>
+                              </div>
+                          </Grid>
+                          <Grid item xs={2}>
+                              <div className="display-flex justify-content-center align-items-center w-10 h-10 border-radius-50 bg-purple-4 color-white-default ta-center">
+                                  <div className="line-height-05 fs-1-5">
+                                      <p>react.js</p>
+                                      <p className="fs-3">40%</p>
+                                  </div>
+                              </div>
+                          </Grid>
+                          <Grid item xs={2}>
+                              <div className="display-flex justify-content-center align-items-center w-10 h-10 border-radius-50 bg-purple-5 color-white-default ta-center">
+                                  <div className="line-height-05 fs-1-5">
+                                      <p>java core</p>
+                                      <p className="fs-3">80%</p>
+                                  </div>
+                              </div>
+                          </Grid>
+                          <Grid item xs={2}>
+                              <div className="display-flex justify-content-center align-items-center w-10 h-10 border-radius-50 bg-purple-6 color-white-default ta-center">
+                                  <div className="line-height-05 fs-1-5">
+                                      <p>java collections</p>
+                                      <p className="fs-3">80%</p>
+                                  </div>
+                              </div>
+                          </Grid>
+                          <Grid item xs={2}>
+                              <div className="display-flex justify-content-center align-items-center w-10 h-10 border-radius-50 bg-purple-7 color-white-default ta-center">
+                                  <div className="line-height-05 fs-1-5">
+                                      <p>spring core</p>
+                                      <p className="fs-2-5">70%</p>
+                                  </div>
+                              </div>
+                          </Grid>
+                          <Grid item xs={2}>
+                              <div className="display-flex justify-content-center align-items-center w-10 h-10 border-radius-50 bg-purple-8 color-white-default ta-center">
+                                  <div className="line-height-05 fs-1-5">
+                                      <p>maven</p>
+                                      <p className="fs-2-5">70%</p>
+                                  </div>
+                              </div>
+                          </Grid>
+                          <Grid item xs={2}>
+                              <div className="display-flex justify-content-center align-items-center w-10 h-10 border-radius-50 bg-purple-9 color-white-default ta-center">
+                                  <div className="line-height-05 fs-1-5">
+                                      <p>sql</p>
+                                      <p className="fs-2-5">70%</p>
+                                  </div>
+                              </div>
+                          </Grid>
+                          <Grid item xs={2}></Grid>
+                      </Grid>
+                  </div>
+              </Grid>
+              <Grid item xs={2}></Grid>
+          </Grid>
       </Grid>
     </>
   );

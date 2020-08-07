@@ -14,17 +14,18 @@ export default class Home extends Component {
       // };
       return (
           <>
-            <Grid container className="bg-white-1">
+            <Grid container className="p-0-5 bg-white-1">
               <Grid item xs={12}>
                 <Grid container>
                   <Grid item xs={2}></Grid>
                   <Grid item xs={4} className="line-height-05">
-                    <div className="mt-10">
-                      <p className="fs-1">HI THERE!</p>
+                    <div>
+                      <p className="fs-1">HI THERE! My name is</p>
                       <p className="fs-2-5 tt-upper">eugene chernyshev</p>
-                      <p className="fs-1-2 tt-upper">trainee js/react js developer </p>
+                      <p className="fs-1">And I am is</p>
+                      <p className="fs-1-2 tt-upper">trainee js/react.js developer </p>
                       <Grid container>
-                        <p className="line-height-1-5">  I'm a Freelance UI/UX Designer and Developer based in London, England. I strives to build immersive and beautiful web applications through carefully crafted code and user-centric design.</p>
+                        <p className="line-height-1-5">  I'm a Developer based in Lviv, Ukraine. I strives to build immersive and beautiful web applications through carefully crafted code and user-centric design.</p>
                       </Grid>
                       <Grid container>
                         <Grid container alignItems="center">
@@ -53,15 +54,15 @@ export default class Home extends Component {
                         </Grid>
                       </Grid>
                       <p>
-                        <Button variant="outline-primary" className="p-07-3 bg-blue-g border-none color-white-default fs-1 cursor-pointer box-shadow-purple">More about me</  Button>{' '}
+                        <Button variant="outline-primary" className="p-07-3 bg-blue-g border-none color-white-default fs-1 cursor-pointer box-shadow-purple transition-3">More about me</  Button>{' '}
 
-                        <Button variant="outline-primary" className="p-07-3 bg-amber-g border-none color-white-default fs-1 cursor-pointer box-shadow-amber">View CV</  Button>{' '}
+                        <Button variant="outline-primary" className="p-07-3 bg-amber-g border-none color-white-default fs-1 cursor-pointer box-shadow-amber transition-3">View CV</  Button>{' '}
                       </p>
                     </div>
 
                   </Grid>
                   <Grid item xs={2}>
-                    <div className="mt-7 position-relative">
+                    <div className="mt-3 position-relative">
                       <div className="w-40 h-40 image-code"></div>
                       <div className="position-absolute top--6 left-5 w-30 h-30 image-author"></div>
                     </div>
