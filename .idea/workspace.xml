@@ -1,18 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="40c534b6-6688-4983-8d5f-900fddb36336" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/css/default-styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/css/default-styles.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/About.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/About.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/Contacts.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Contacts.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/Home.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Home.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/Resume.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Resume.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/css/About.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/css/About.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/css/Contacts.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/css/Contacts.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/css/Home.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/css/Home.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/css/Resume.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/css/Resume.css" afterDir="false" />
-    </list>
+    <list default="true" id="40c534b6-6688-4983-8d5f-900fddb36336" name="Default" comment="" />
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
     <ignored path="$PROJECT_DIR$/tmp/" />
@@ -246,16 +235,15 @@
       <workItem from="1596647766495" duration="39000" />
       <workItem from="1596647845230" duration="1005000" />
       <workItem from="1596804103287" duration="6668000" />
-      <workItem from="1596818766952" duration="8098000" />
+      <workItem from="1596818766952" duration="8392000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="15810000" />
+    <option name="totallyTimeSpent" value="16104000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-1928" y="-8" width="1936" height="1096" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.1953125" />
       <window_info anchor="bottom" id="TODO" order="6" />

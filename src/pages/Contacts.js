@@ -48,7 +48,7 @@ class Contacts extends React.Component {
               <p><input type="text" placeholder="Enter email adress" className="p-04-1 border-grey fs-1"></input></p>
               <p><input type="text" placeholder="Enter subject" className="p-04-1 border-grey fs-1"></input></p>
               <p>
-                <Button variant="outline-primary" className="p-07-3-5 bg-blue-g border-none color-white-default fs-1 cursor-pointer box-shadow-purple">Send message</  Button>{' '}
+                <Button variant="outline-primary" className="p-07-3-5 bg-blue-g border-none color-white-default fs-1 cursor-pointer box-shadow-purple">Send message</Button>{' '}
               </p>
             </Grid>
             <Grid item xs={6}>

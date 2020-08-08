@@ -30,10 +30,10 @@ export default class header extends Component {
                     <div className="display-flex">
                       <a href="/" className="simple-menu-link color-blue-1 fs-1-5">Home</a>
                       <a href="/about" className="ml-1 simple-menu-link color-blue-1 fs-1-5">About</a>
-                      <a href="" className="ml-1 simple-menu-link color-blue-1 fs-1-5">Technologes</a>
-                      <a href="/resume" className="ml-1 simple-menu-link color-blue-1 fs-1-5">Resume</a>
+                      {/*<a href="" className="ml-1 simple-menu-link color-blue-1 fs-1-5">Technologes</a>*/}
+                      {/*<a href="/resume" className="ml-1 simple-menu-link color-blue-1 fs-1-5">Resume</a>*/}
                       <a href="" className="ml-1 simple-menu-link color-blue-1 fs-1-5">Source code</a>
-                      <a href="" className="ml-1 simple-menu-link color-blue-1 fs-1-5">Ny blog</a>
+                      {/*<a href="" className="ml-1 simple-menu-link color-blue-1 fs-1-5">My blog</a>*/}
                       <a href="/contacts" className="ml-1 simple-menu-link color-blue-1 fs-1-5">Contacts</a>
                     </div>
                   </Col>
