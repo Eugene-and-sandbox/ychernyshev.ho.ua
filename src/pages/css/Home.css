@@ -16,3 +16,33 @@
   background: url(../../images/personal-photo.png) no-repeat;
   background-size: 100%;
 }
+
+.image-js-icon {
+  background: url(../../images/js-icon.png) no-repeat;
+  background-size: 100%;
+}
+
+.image-react-icon {
+  background: url(../../images/react-icon.png) no-repeat;
+  background-size: 100%;
+}
+
+.image-java-icon {
+  background: url(../../images/java-icon.png) no-repeat;
+  background-size: 100%;
+}
+
+.image-spring-icon {
+  background: url(../../images/spring-icon.png) no-repeat;
+  background-size: 100%;
+}
+
+.image-fb-icon {
+  background: url(../../images/fb-icon2.png) no-repeat;
+  background-size: 100%;
+}
+
+.image-li-icon {
+  background: url(../../images/li-icon.png) no-repeat;
+  background-size: 100%;
+}
