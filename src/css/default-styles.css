@@ -180,7 +180,7 @@
   background: #7a37e4; }
 .bg-purple-5 { background: #825bc1; } .bg-purple-6 {
   background: #190f29; }
-.bg-purple-7 { background: #c3a2f7;} .bg-purple-8 {
+.bg-purple-7 { background: #6c29d8;} .bg-purple-8 {
   background: #402a62; }
 .bg-purple-9 { background: #4400b0;}
 
@@ -246,6 +246,10 @@
     color: #1769aa;
 }
 
+.color-blue-2 {
+    color: #2d95e8;
+}
+
 .color-grey-1 { color: #b8afaf; } .color-grey-2 {
     color: #A5A09A; }
 .color-grey-3 { color: #6b6868; }
@@ -260,6 +264,14 @@
 
 .color-purple-1 {
   color: #3B1972;
+}
+
+.color-green-1 {
+  color: #14b71f;
+}
+
+.color-dark-1 {
+  color: #222222;
 }
 
 /* Text Transform */
@@ -285,9 +297,9 @@
     text-decoration: none;
 }
 
-/* .text-decoration-none:hover {
+.text-decoration-none:hover {
     border-bottom: .1rem solid;
-} */
+}
 
 /* Font size */
 .fs-1 { font-size: 1rem; } .fs-1-2 { font-size: 1.2rem; }
