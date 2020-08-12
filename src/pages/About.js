@@ -22,7 +22,7 @@ export default function About() {
   console.log(classes);
   return (
     <>
-      <Grid container className="mt-5 bg-dark-1">
+      <Grid container className="mt-5">
         <Grid item xs={2}></Grid>
         <Grid item xs={3}>
           <div>
@@ -34,33 +34,33 @@ export default function About() {
           <Grid container className="mt-5">
             <Grid item xs={4}>
               First Name:{" "}
-              <span className="ml-1 color-white-default">Eugene</span>
+              <span className="ml-1 color-dark-1">Eugene</span>
             </Grid>
             <Grid item xs={3}>
               Freelance:{" "}
-              <span className="ml-1 color-white-default">Available</span>
+              <span className="ml-1 color-dark-1">Available</span>
             </Grid>
           </Grid>
           {/* // */}
           <Grid container>
             <Grid item xs={4}>
               Last Name:
-              <span className="ml-1 color-white-default">Chernyshev</span>
+              <span className="ml-1 color-dark-1">Chernyshev</span>
             </Grid>
             <Grid item xs={4}>
               Wirk in office:
-              <span className="ml-1 color-white-default">Available</span>
+              <span className="ml-1 color-dark-1">Available</span>
             </Grid>
           </Grid>
           {/* // */}
           <Grid container>
             <Grid item xs={4}>
               Birthdate:
-              <span className="ml-1 color-white-default">14 april 1987</span>
+              <span className="ml-1 color-dark-1">14 april 1987</span>
             </Grid>
             <Grid item xs={7}>
               Langages:
-              <span className="ml-1 color-white-default">
+              <span className="ml-1 color-dark-1">
                 English (B1), Ukraine (C2), Russian (C2)
               </span>
             </Grid>
@@ -69,11 +69,11 @@ export default function About() {
           <Grid container>
             <Grid item xs={4}>
               Nationality:
-              <span className="ml-1 color-white-default">Ukrainian</span>
+              <span className="ml-1 color-dark-1">Ukrainian</span>
             </Grid>
             <Grid item xs={4}>
               Phone:
-              <span className="ml-1 color-white-default">
+              <span className="ml-1 color-dark-1">
                 +38 (068) 117 57 07
               </span>
             </Grid>
@@ -82,11 +82,11 @@ export default function About() {
           <Grid container>
             <Grid item xs={4}>
               Experience:
-              <span className="ml-1 color-white-default">1 year</span>
+              <span className="ml-1 color-dark-1">1 year</span>
             </Grid>
             <Grid item xs={4}>
               Email:
-              <span className="ml-1 color-white-default">
+              <span className="ml-1 color-dark-1">
                 eugene.chernishov@zohomail.com
               </span>
             </Grid>
@@ -95,7 +95,7 @@ export default function About() {
           <Grid container>
             <Grid item xs={4}>
               Address:
-              <span className="ml-1 color-white-default">Lviv</span>
+              <span className="ml-1 color-dark-1">Lviv</span>
             </Grid>
             <Grid item xs={4}>
               LinkedIn:
@@ -111,12 +111,15 @@ export default function About() {
             <Grid item xs={12}>
                 <Button variant="outline-primary" className="mt-3 p-07-3 bg-amber-g border-none color-white-default fs-1 cursor-pointer box-shadow-amber transition-3">
                     View CV
-                </  Button>{' '}
-                <div className="mt-4"></div>
+                </Button>{' '}
+                <div className="mt-5"></div>
             </Grid>
           </Grid>
         </Grid>
         <Grid item xs={2}></Grid>
+      </Grid>
+      <Grid container>
+        <Grid item xs={12} className="bg-dark-1 h-2"></Grid>
       </Grid>
       <Grid container>
           <Grid item xs={2}></Grid>
@@ -243,13 +246,13 @@ export default function About() {
           <Grid item xs={2} className="bg-dark-1"></Grid>
           <Grid item xs={4}>
             <Grid container className="color-dark-1">
-              <Grid item xs={1} className="bg-white-1">
+              <Grid item xs={1} className="bg-dark-1 color-white-default">
                 point point
               </Grid>
-              <Grid item xs={11}>
-                <div className="mt-1 fs-1-5 line-height-1">
+              <Grid item xs={11} className="bg-purple-1 color-white-default">
+                <div className="p-1 fs-1-5 line-height-1">
                   <small className="fw-bold">03.2018-04.2020</small>
-                  <p className=" tt-upper fw-bold">
+                  <p className=" tt-upper fw-bold line-height-2">
                     Call Center Operator - <span className="fw-bold">Oriflame Cosmetics</span>
                   </p>
                   <p className="ta-justify line-height-2">
@@ -264,23 +267,24 @@ export default function About() {
                     this job.
                   </p>
                 </div>
-                <div className="mt-3"></div>
-                <small className="fw-bold">11.2016-11.2017</small>
-                <div className="mt-1 fs-1-5 line-height-1">
-                  <p className=" tt-upper fw-bold">
-                    typesetter - <span className="fw-bold">almaz-cnc</span>
-                  </p>
-                  <p className="ta-justify line-height-2">
-                    The firm is engaged in designing, manufacturing, selling and
-                    servicing the engraving machines. Basically, my task in this
-                    work was to create and develop, support and improve the
-                    trading platform to expand the range of services provided by
-                    the company. Also, I was engaged in supporting the IT
-                    infrastructure of the firm and advising on information
-                    security issues. I introduced new web-platform with store,
-                    knowledge base with support and mailing system when I been on
-                    this job.
-                  </p>
+                <div className="p-1">
+                    <small className="fw-bold">11.2016-11.2017</small>
+                    <div className="fs-1-5 line-height-1">
+                      <p className=" tt-upper fw-bold">
+                        typesetter - <span className="fw-bold">almaz-cnc</span>
+                      </p>
+                      <p className="ta-justify line-height-2">
+                        The firm is engaged in designing, manufacturing, selling and
+                        servicing the engraving machines. Basically, my task in this
+                        work was to create and develop, support and improve the
+                        trading platform to expand the range of services provided by
+                        the company. Also, I was engaged in supporting the IT
+                        infrastructure of the firm and advising on information
+                        security issues. I introduced new web-platform with store,
+                        knowledge base with support and mailing system when I been on
+                        this job.
+                      </p>
+                    </div>
                 </div>
               </Grid>
             </Grid>
@@ -290,38 +294,38 @@ export default function About() {
               summary
             </p>
             <p className="line-height-2 ta-justify"> love hard tasks. It activates, awakens, allows to move forward, update knowledge, get new ones. It is filling life with an idea. I see this dynamics in IT. I feel like a fish in water when I programming something: sites, instructions or documentations, programs, anything. And IT is my choice, my ocean. In other jobs I programming anyway. But I want to do it in professional level</p>
-            <p className="mt-3 tt-upper fs-1-5 fw-bold">
-              preferences in work
-            </p>
-            <p className="line-height-2 ta-justify">I like when employees do their work. I like when they are a team in all questions (working and non-working). I like when tasks are correct. I dislike when we do not know what we do. It is not good position for team, department, all organization. </p>
+              <div className="bg-amber">
+                  <p className="mt-3 tt-upper fs-1-5 fw-bold">
+                      preferences in work
+                  </p>
+                  <p className="line-height-2 ta-justify">I like when employees do their work. I like when they are a team in all questions (working and non-working). I like when tasks are correct. I dislike when we do not know what we do. It is not good position for team, department, all organization. </p>
+              </div>
             <p className="mt-3 tt-upper fs-1-5 fw-bold">
               I like
             </p>
             <p className="line-height-2 ta-justify">IT, information security themes, I sometime write articles about it. I like psychology (I write a book on this theme), history, astronomy. I believe people and like to help them, and I hope on good result in this</p>
           </Grid>
-          <Grid item xs={1}></Grid>
+          <Grid item xs={2}></Grid>
         </Grid>
       </Grid>
-      <Grid container className="mt-1 bg-dark-1 color-grey-1">
+      <Grid container className="bg-dark-1 color-grey-1">
         <Grid xs={2}></Grid>
         <Grid xs={4}>
-          <p className="tt-upper fs-1-5 fw-bold color-white-default">
-            My personal qualities
-          </p>
+          <p className="tt-upper fs-1-5 fw-bold color-white-default"></p>
         </Grid>
-        <Grid xs={4}>
+        <Grid xs={4} className="border-radius-50">
           <p className="tt-upper fs-1-5 fw-bold color-white-default">
             education & courses
           </p>
         </Grid>
-        <Grid xs={2}></Grid>
+        <Grid xs={2} className="bg-white-1"></Grid>
       </Grid>
       <Grid container className="fs-1-5 color-grey-1 line-height-1">
         <Grid item xs={2} className="bg-dark-1"></Grid>
         <Grid item xs={4} className="line-height-2 ta-justify bg-dark-1">
         </Grid>
         <Grid item xs={4}>
-          <Grid container className="color-dark-1">
+          <Grid container className="bg-dark-1 color-white-default">
             <Grid item xs={1}>
               point point
             </Grid>
@@ -360,6 +364,7 @@ export default function About() {
                   </p>
                 </div>
               </div>
+              <div className="mt-5"></div>
             </Grid>
           </Grid>
         </Grid>

@@ -68,13 +68,13 @@ export default class Home extends Component {
                         </Grid>
                       </Grid>
                       <div className="mt--5">
-                      <Link to="/about">
-                        <Button className="p-07-3 bg-blue-g border-none color-white-default fs-1-2 cursor-pointer box-shadow-purple transition-3">More about me</Button>{' '}
-                      </Link>
+                          <Link to="/about">
+                            <Button className="p-07-3 bg-blue-g border-none color-white-default fs-1-2 cursor-pointer box-shadow-purple transition-3">More about me</Button>{' '}
+                          </Link>
 
-                      <Link to="">
-                        <Button variant="outline-primary" className="p-07-3 bg-amber-g border-none color-white-default fs-1-2 cursor-pointer box-shadow-amber transition-3">View CV</Button>{' '}
-                      </Link>
+                          <Link to="">
+                            <Button variant="outline-primary" className="p-07-3 bg-amber-g border-none color-white-default fs-1-2 cursor-pointer box-shadow-amber transition-3">View CV</Button>{' '}
+                          </Link>
                       </div>
                     </div>
                   </Grid>

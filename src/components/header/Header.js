@@ -27,14 +27,14 @@ export default class header extends Component {
             <Container fluid='md'>
                 <Row className="justify-content-md-center">
                   <Col xs={6}>
-                    <div className="display-flex">
-                      <a href="/" className="simple-menu-link color-blue-1 fs-1-5">Home</a>
-                      <a href="/about" className="ml-1 simple-menu-link color-blue-1 fs-1-5">About</a>
+                    <div className="display-flex justify-content-end">
+                      <a href="/" className="p-07-3 simple-menu-link border-01 color-blue-1 fs-1-5">Home</a>
+                      <a href="/about" className="ml-1 simple-menu-link p-07-3 simple-menu-link border-01 color-blue-1 fs-1-5">About</a>
                       {/*<a href="" className="ml-1 simple-menu-link color-blue-1 fs-1-5">Technologes</a>*/}
                       {/*<a href="/resume" className="ml-1 simple-menu-link color-blue-1 fs-1-5">Resume</a>*/}
-                      <a href="" className="ml-1 simple-menu-link color-blue-1 fs-1-5">Source code</a>
+                      {/*// <a href="" className="ml-1 simple-menu-link color-blue-1 fs-1-5">Source code</a>*/}
                       {/*<a href="" className="ml-1 simple-menu-link color-blue-1 fs-1-5">My blog</a>*/}
-                      <a href="/contacts" className="ml-1 simple-menu-link color-blue-1 fs-1-5">Contacts</a>
+                      {/*// <a href="/contacts" className="ml-1 simple-menu-link color-blue-1 fs-1-5">Contacts</a>*/}
                     </div>
                   </Col>
                 </Row>
