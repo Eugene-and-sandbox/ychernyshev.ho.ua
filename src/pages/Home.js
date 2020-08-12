@@ -183,6 +183,7 @@ export default class Home extends Component {
                               <p><input type="text" placeholder="Enter subject" className="w-97-p p-04-1 border-grey border-radius-03 bg-transparent fs-1 color-white-default"></input></p>
                               <p><textarea type="message" placeholder="Enter Message"  className="w-97-p p-04-1 w-40 h-15 border-grey border-radius-03 bg-transparent fs-1 color-white-default textarea-r-vertical"></textarea></p>
                               <Button variant="outline-primary" className="p-07-3-5 w-100-p bg-blue-g border-none color-white-default fs-1-2 cursor-pointer box-shadow-purple">Send message</Button>{' '}
+                              <div className="mt-3"></div>
                           </Grid>
                           <Grid item xs={2}></Grid>
                       </Grid>
