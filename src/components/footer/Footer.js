@@ -24,7 +24,7 @@ export default class footer extends Component {
                     <p>Eugene Chernyshev</p>
                   </div>
                 </Grid>
-                <Grid item xs={2}></Grid>
+                <Grid item xs={2} className="bg-dark-1"></Grid>
               </Grid>
               </>
             )

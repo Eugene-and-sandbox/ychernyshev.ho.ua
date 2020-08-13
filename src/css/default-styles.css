@@ -74,7 +74,7 @@
 .right-10 { right: 10rem; }
 
 /* Margine */
-.mt-05 { margin-top: .3rem; }
+.mt-0 { margin-top: 0; } .mt-05 { margin-top: .3rem; }
 .mt-1 { margin-top: 1rem; } .mt-2 { margin-top: 2rem; }
 .mt-3 { margin-top: 3rem; } .mt-4 { margin-top: 4rem; }
 .mt-5 { margin-top: 5rem; } .mt-6 { margin-top: 6rem; }
@@ -104,8 +104,13 @@
 .p-07-3-5 {
     padding: .7rem 3.8rem;
 }
+
 .p-04-1 {
     padding: .5rem 1rem;
+}
+
+.p-05-0 {
+    padding: .5rem 0;
 }
 
 .p-0-5 {
@@ -130,6 +135,7 @@
 .w-40 { width: 40rem; } .w-50 { width: 50rem; }
 
 .w-25-p { width: 25%; } .w-30-p { width: 30%; }
+.w-35-p { width: 35%; } .w-40-p { width: 40%; }
 .w-90-p {width: 90%; } .w-94-5-p {width: 94.5%; }
 .w-97-p {width: 97.3%; } .w-100-p { width: 100%; }
 
@@ -186,6 +192,10 @@
   background: #402a62; }
 .bg-purple-9 { background: #4400b0;}
 
+.bg-green-1 {
+    background: #14b71f;
+}
+
 .bg-blue-g {
   background: linear-gradient(to bottom right, #4940E7, #3B1972);
 }
@@ -240,8 +250,8 @@
   border-radius: 50%;
 }
 
-.br-right-top {
-  border-radius: 0 0 0 12rem;
+.br-right-top-1 {
+    border-radius: 0 .5rem 0 0;
 }
 
 /*Font family*/

@@ -289,47 +289,53 @@ export default function About() {
               </Grid>
             </Grid>
           </Grid>
-          <Grid item xs={4} className="p-07-3 color-dark-1">
-            <p className="mt-1 tt-upper fs-1-5 fw-bold">
-              summary
-            </p>
-            <p className="line-height-2 ta-justify"> love hard tasks. It activates, awakens, allows to move forward, update knowledge, get new ones. It is filling life with an idea. I see this dynamics in IT. I feel like a fish in water when I programming something: sites, instructions or documentations, programs, anything. And IT is my choice, my ocean. In other jobs I programming anyway. But I want to do it in professional level</p>
-              <div className="bg-amber">
-                  <p className="mt-3 tt-upper fs-1-5 fw-bold">
+          <Grid item xs={4} className="color-dark-1">
+              <div className="p-07-3">
+                <p className="mt-1 tt-upper fs-1-5 fw-bold">
+                  summary
+                </p>
+                <p className="line-height-2 ta-justify"> love hard tasks. It activates, awakens, allows to move forward, update knowledge, get new ones. It is filling life with an idea. I see this dynamics in IT. I feel like a fish in water when I programming something: sites, instructions or documentations, programs, anything. And IT is my choice, my ocean. In other jobs I programming anyway. But I want to do it in professional level</p>
+              </div>
+              <div className="p-07-3 bg-amber">
+                  <p className="mt-2 tt-upper fs-1-5 fw-bold">
                       preferences in work
                   </p>
                   <p className="line-height-2 ta-justify">I like when employees do their work. I like when they are a team in all questions (working and non-working). I like when tasks are correct. I dislike when we do not know what we do. It is not good position for team, department, all organization. </p>
               </div>
-            <p className="mt-3 tt-upper fs-1-5 fw-bold">
-              I like
-            </p>
-            <p className="line-height-2 ta-justify">IT, information security themes, I sometime write articles about it. I like psychology (I write a book on this theme), history, astronomy. I believe people and like to help them, and I hope on good result in this</p>
+              <div className="p-07-3">
+                <p className="mt-3 tt-upper fs-1-5 fw-bold">
+                  I like
+                </p>
+                <p className="line-height-2 ta-justify">IT, information security themes, I sometime write articles about it. I like psychology (I write a book on this theme), history, astronomy. I believe people and like to help them, and I hope on good result in this</p>
+              </div>
           </Grid>
           <Grid item xs={2}></Grid>
         </Grid>
       </Grid>
-      <Grid container className="bg-dark-1 color-grey-1">
+      <Grid container className="bg-dark-1">
         <Grid xs={2}></Grid>
         <Grid xs={4}>
           <p className="tt-upper fs-1-5 fw-bold color-white-default"></p>
         </Grid>
-        <Grid xs={4} className="border-radius-50">
-          <p className="tt-upper fs-1-5 fw-bold color-white-default">
-            education & courses
-          </p>
+        <Grid xs={4} className="bg-amber">
+          <div className="ml-1 p-05-0">
+              <p className="tt-upper fs-1-5 fw-bold">
+                  education & courses
+              </p>
+          </div>
         </Grid>
         <Grid xs={2} className="bg-white-1"></Grid>
       </Grid>
-      <Grid container className="fs-1-5 color-grey-1 line-height-1">
+      <Grid container className="fs-1-5 line-height-1">
         <Grid item xs={2} className="bg-dark-1"></Grid>
         <Grid item xs={4} className="line-height-2 ta-justify bg-dark-1">
         </Grid>
         <Grid item xs={4}>
-          <Grid container className="bg-dark-1 color-white-default">
+          <Grid container className="bg-dark-1">
             <Grid item xs={1}>
-              point point
+                <p className="color-white-default">point point</p>
             </Grid>
-            <Grid item xs={11}>
+            <Grid item xs={11} className="p-07-3 bg-amber">
               <div className="mt-1">
                 <small className="fw-bold">2011 - 2016</small>
                 <div className="fs-1-2 line-height-2">
@@ -364,11 +370,10 @@ export default function About() {
                   </p>
                 </div>
               </div>
-              <div className="mt-5"></div>
             </Grid>
           </Grid>
         </Grid>
-        <Grid item xs={2}></Grid>
+        <Grid item xs={2} className="bg-dark-1"></Grid>
       </Grid>
     </>
   );

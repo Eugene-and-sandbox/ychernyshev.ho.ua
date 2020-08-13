@@ -26,7 +26,7 @@ export default class Home extends Component {
           <>
             <Grid container className="bg-white-1">
               <Grid item xs={12}>
-                <Grid container className="mt-8">
+                <Grid container className="mt-3">
                   <Grid item xs={2}></Grid>
                   <Grid item xs={4} className="line-height-05">
                     <div>
@@ -34,6 +34,7 @@ export default class Home extends Component {
                       <p className="fs-3 fw-bold tt-upper">eugene chernyshev</p>
                       <p className="fs-1-5">I am is</p>
                       <p className="fs-2 tt-upper">trainee js/react.js developer </p>
+                      <div className="mt--3 p-1 w-40-p bg-green-1 ta-center color-white-default fw-bold">Open for new opportunities</div>
                       <Grid container>
                         <p className="line-height-2 ta-justify fs-1-5">  I'm a Developer based in Lviv, Ukraine. I strives to build immersive and beautiful web applications through carefully crafted code and user-centric design.</p>
                       </Grid>
@@ -57,25 +58,26 @@ export default class Home extends Component {
                           <Grid item xs={8}>
                             <div className="display-flex mt-1">
                               <a href="https://www.linkedin.com/in/chernyshev-eugene-79145886/">
-                                <div className="flex-1 image-li-icon w-10 h-10"></div>
+                                <div className="flex-1 image-li-icon w-10 h-5"></div>
                               </a>
                               <a href="https://www.facebook.com/eugene.chernishev">
-                                <div className="flex-1 ml-1 image-fb-icon w-10 h-10"></div>
+                                <div className="flex-1 ml-1 image-fb-icon w-10 h-5"></div>
                               </a>
                               <div className="flex-1"></div>
                             </div>
                           </Grid>
                         </Grid>
                       </Grid>
-                      <div className="mt--5">
-                          <Link to="/about">
-                            <Button className="p-07-3 bg-blue-g border-none color-white-default fs-1-2 cursor-pointer box-shadow-purple transition-3">More about me</Button>{' '}
-                          </Link>
+                        <div className="mt--3">
+                            <Link to="/about">
+                                <Button className="p-07-3 bg-blue-g border-none color-white-default fs-1-2 cursor-pointer box-shadow-purple transition-3">More about me</Button>{' '}
+                            </Link>
 
-                          <Link to="">
-                            <Button variant="outline-primary" className="p-07-3 bg-amber-g border-none color-white-default fs-1-2 cursor-pointer box-shadow-amber transition-3">View CV</Button>{' '}
-                          </Link>
-                      </div>
+                            <Link to="">
+                                <Button variant="outline-primary" className="p-07-3 bg-amber-g border-none color-white-default fs-1-2 cursor-pointer box-shadow-amber transition-3">View CV</Button>{' '}
+                            </Link>
+                        </div>
+                        <div className="mt-6"></div>
                     </div>
                   </Grid>
                   <Grid item xs={2}>
