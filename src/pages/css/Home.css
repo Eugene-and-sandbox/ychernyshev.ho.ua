@@ -1,6 +1,6 @@
-/*body {*/
-  /*background: white;*/
-/*}*/
+body {
+  background: white;
+}
 
 /* Opacity */
 .opacity-50 {
@@ -14,6 +14,11 @@
 
 .image-author {
   background: url(../../images/personal-photo.png) no-repeat;
+  background-size: 100%;
+}
+
+.image-html-css-icon {
+  background: url(../../images/html-css-icon.png) no-repeat;
   background-size: 100%;
 }
 
@@ -44,5 +49,21 @@
 
 .image-li-icon {
   background: url(../../images/li-icon.png) no-repeat;
+  background-size: 100%;
+}
+
+.image-sql-icon {
+  background: url(../../images/sql-icon.png) no-repeat;
+  background-size: 100%;
+}
+
+.image-bootstrap-icon {
+  background: url(../../images/bootstrap-icon.png) no-repeat;
+  background-size: 100%;
+}
+
+
+.image-maven-icon {
+  background: url(../../images/maven-icon.png) no-repeat;
   background-size: 100%;
 }

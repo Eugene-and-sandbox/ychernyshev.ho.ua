@@ -2,8 +2,8 @@ import React from "react";
 import AboutStyles from "./css/About.css";
 import defStyles from '../css/default-styles.css';
 import Grid from "@material-ui/core/Grid";
-import { Button } from "react-bootstrap";
-import { makeStyles } from "@material-ui/core";
+import { Button} from "react-bootstrap";
+import { makeStyles, Link } from "@material-ui/core";
 
 const styles = makeStyles({
   buttonStyle: {
@@ -11,11 +11,17 @@ const styles = makeStyles({
   },
 });
 
-// const styles ={
-//     buttonStyle: {
-//         color: '#ffc107'
-//     }
-// }
+let addPost = () => {
+  let collapse =document.getElementsByClassName('collapsable');
+  for(let i =0; i <collapse.length; i++) {
+    collapse[i].addEventListener('click', function() {
+      this.classList.toggle('active');
+      let content =this.nexElementSibling;
+      if(content.style.maxHeight) content.style.maxHeight =null;
+      else content.style.maxHeight =content.scrollHeight +'px';
+    })
+  }
+}
 
 export default function About() {
   const classes = styles();
@@ -109,17 +115,18 @@ export default function About() {
           {/* // */}
           <Grid container>
             <Grid item xs={12}>
-                <Button variant="outline-primary" className="mt-3 p-07-3 bg-amber-g border-none color-white-default fs-1 cursor-pointer box-shadow-amber transition-3">
-                    View CV
-                </Button>{' '}
-                <div className="mt-5"></div>
+              <Link to="">
+                    <Button variant="outline-primary" className="mt-3 p-07-3 bg-amber-g border-none color-white-default fs-1-2 cursor-pointer box-shadow-amber transition-3">View CV</Button>{' '}
+                </Link>
+
+                <Link to="">
+                    <Button variant="outline-primary" className="p-07-3 border-none fs-1-2 fw-bold cursor-pointer box-shadow-dark transition-3">Personal Qualities</Button>{' '}
+                </Link>
+                <div className="mt-8"></div>
             </Grid>
           </Grid>
         </Grid>
         <Grid item xs={2}></Grid>
-      </Grid>
-      <Grid container>
-        <Grid item xs={12} className="bg-dark-1 h-2"></Grid>
       </Grid>
       <Grid container>
           <Grid item xs={2}></Grid>
@@ -213,41 +220,31 @@ export default function About() {
           </Grid>
           <Grid item xs={2}></Grid>
       </Grid>
-      <Grid container className="mt-1 bg-dark-1 color-grey-1">
-        <Grid xs={2}></Grid>
-        <Grid xs={8}>
-          <p className="tt-upper fs-1-5 fw-bold color-white-default">
-            My personal qualities
-          </p>
-        </Grid>
-        <Grid xs={2}></Grid>
-      </Grid>
-      <Grid container className="fs-1-5 color-grey-1 line-height-1">
-        <Grid item xs={2} className="bg-dark-1"></Grid>
-        <Grid item xs={8} className="line-height-2 ta-justify bg-dark-1">
-          <p>My personal qualities and competencies are the main "drivers" to the goal. Working with clients, I learned to understand the undeniable importance of each individual client in the life of the whole company, and understanding and feeling the "pain" of the client, eventually leads to finding the right solution when considering his question. Working in a team, I felt the inability to maintain at the appropriate, professional level, absolutely any process within the company without its employees, their qualifications, motivation, desire to constantly develop with the company. I was lucky to work as a leader, teacher and examiner when working with staff. Participating in the process of developing working tools both as a team and independently, I was able to develop a sense of the overall flow of the company's processes to the extent that allowed me to identify their shortcomings and offer solutions to eliminate or optimize them, as well as implement these solutions. practice. Some of the tools developed and used by me personally allowed new employees to work with a large amount of information more comfortably and in the shortest possible time to find comprehensive information on issues that interest them at the time of their greatest interest in them. A key role in creating such solutions was played by a sense of involvement in the overall process of the company and a deep connection with its team of employees. Working with clients and on the company's internal processes allowed me to gain experience in resilience in stressful situations, including conflict situations, a very wide range of complexity in parallel with the ability to work overtime, if necessary, supporting several independent projects. Training employees and giving presentations to them allowed me to find an understanding that I really like being in this role for them, which, in my opinion, should play an important role in companies of any type, which primarily position their interest in continuous training of their employees, gaining an understanding that they will always have support from more experienced colleagues and managers, as well as in establishing close ties and relationships between them. In my opinion, this has a corresponding effect on the stability of processes within the company and on the professional approach to these processes by its employees. All these skills allowed me to reluctantly accept the challenge to move to another city to use the experience to work on a new project, which was successfully implemented and in a short time allowed to achieve significant success in the customer support sector, marked by positive feedback from a wide range of customers.</p>
-        </Grid>
-        <Grid item xs={2} className="bg-dark-1"></Grid>
+      <Grid container className="mt-3 fs-1-5 color-grey-1 line-height-1">
         <Grid container>
-          <Grid container className="bg-dark-1">
-            <Grid xs={2} className="bg-dark-1"></Grid>
-            <Grid xs={4}>
+          <Grid container className="mt-4">
+            <Grid xs={2}></Grid>
+            <Grid xs={4} className="bg-purple-1">
               <p className="tt-upper fs-1-5 fw-bold color-white-default">
                 experience
               </p>
             </Grid>
             <Grid xs={4} className="p-07-3">
-              <p className="tt-upper fs-1-5 fw-bold color-white-default">
+              <p className="tt-upper fs-1-5 color-dark-1 fw-bold">
                 about me
               </p>
             </Grid>
             <Grid xs={2}></Grid>
           </Grid>
-          <Grid item xs={2} className="bg-dark-1"></Grid>
+          <Grid item xs={2}></Grid>
           <Grid item xs={4}>
             <Grid container className="color-dark-1">
-              <Grid item xs={1} className="bg-dark-1 color-white-default">
-                point point
+              <Grid item xs={1} className="bg-purple-1 color-white-default">
+                <div className="display-flex">
+                  <div className="flex-5"></div>
+                  <div className="flex-2 w-02 h-100-vh bg-amber"></div>
+                  <div className="flex-5"></div>
+                </div>
               </Grid>
               <Grid item xs={11} className="bg-purple-1 color-white-default">
                 <div className="p-1 fs-1-5 line-height-1">
@@ -312,7 +309,7 @@ export default function About() {
           <Grid item xs={2}></Grid>
         </Grid>
       </Grid>
-      <Grid container className="bg-dark-1">
+      <Grid container>
         <Grid xs={2}></Grid>
         <Grid xs={4}>
           <p className="tt-upper fs-1-5 fw-bold color-white-default"></p>
@@ -327,16 +324,22 @@ export default function About() {
         <Grid xs={2} className="bg-white-1"></Grid>
       </Grid>
       <Grid container className="fs-1-5 line-height-1">
-        <Grid item xs={2} className="bg-dark-1"></Grid>
-        <Grid item xs={4} className="line-height-2 ta-justify bg-dark-1">
+        <Grid item xs={2}></Grid>
+        <Grid item xs={4} className="line-height-2 ta-justify">
         </Grid>
         <Grid item xs={4}>
-          <Grid container className="bg-dark-1">
+          <Grid container className="bg-amber">
             <Grid item xs={1}>
-                <p className="color-white-default">point point</p>
+              <div className="display-flex flex-column">
+                <div className="mt-1 w-1 h-1 bg-purple-1 border-radius-50"></div>
+                <div className="w-02 h-16  bg-purple-1"></div>
+                <div className="w-1 h-1 bg-purple-1 border-radius-50"></div>
+                <div className="w-02 h-8 bg-purple-1"></div>
+                <div className="w-1 h-1 bg-purple-1 border-radius-50"></div>
+              </div>
             </Grid>
             <Grid item xs={11} className="p-07-3 bg-amber">
-              <div className="mt-1">
+              <div>
                 <small className="fw-bold">2011 - 2016</small>
                 <div className="fs-1-2 line-height-2">
                   <p className=" tt-upper fw-bold">
@@ -373,7 +376,7 @@ export default function About() {
             </Grid>
           </Grid>
         </Grid>
-        <Grid item xs={2} className="bg-dark-1"></Grid>
+        <Grid item xs={2}></Grid>
       </Grid>
     </>
   );
