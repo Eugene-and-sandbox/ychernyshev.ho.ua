@@ -2,6 +2,10 @@ body {
     background: #F9F9FF;
 }
 
+.simple-menu-link-w {
+    text-decoration: none;
+}
+
 .simple-menu-link {
     text-decoration: none;
 }

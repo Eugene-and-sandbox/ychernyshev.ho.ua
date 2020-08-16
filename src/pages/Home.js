@@ -8,13 +8,13 @@ import LocalPhoneIcon from '@material-ui/icons/LocalPhone';
 import MailIcon from '@material-ui/icons/Mail';
 import {BrowserRouter as Router, Route, Switch, Link} from 'react-router-dom';
 import About from './About';
-import Source from './Source';
+import CV from './cv';
 
 const menu =[
   { name: 'About', link: '/about' },
-  { name: 'Source', link: '/source'},
-  { name: 'CV', link: '/cv'},
-  { name: 'Send', link: '/send'}
+  { name: 'Source', link: '/source' },
+  { name: 'CV', link: '/cv' },
+  { name: 'Send', link: '/send' }
 ]
 
 let cl = () => {
@@ -32,7 +32,7 @@ export default class Home extends Component {
               <Grid item xs={12}>
                 <Grid container className="mt-3">
                   <Grid item xs={2}></Grid>
-                  <Grid item xs={5} className="line-height-05">
+                  <Grid item xs={4} className="line-height-05">
                     <div>
                       <p className="fs-2">HI THERE! My name is</p>
                       <p className="fs-3 fw-bold tt-upper">eugene chernyshev</p>
@@ -77,7 +77,7 @@ export default class Home extends Component {
                                 <Button className="p-07-3 bg-blue-g border-none color-white-default fs-1-2 cursor-pointer box-shadow-purple transition-3">More about me</Button>{' '}
                             </Link>
 
-                            <Link to="">
+                            <Link to="/cv">
                                 <Button variant="outline-primary" className="p-07-3 bg-amber-g border-none color-white-default fs-1-2 cursor-pointer box-shadow-amber transition-3">View CV</Button>{' '}
                             </Link>
 
@@ -90,8 +90,11 @@ export default class Home extends Component {
                   </Grid>
                   <Grid item xs={2}>
                     <div className="mt-3 ml-1 position-relative">
-                      <div className="w-40 h-40 image-code"></div>
-                      <div className="position-absolute top--6 left-5 w-30 h-30 image-author"></div>
+                      <video className="w-40 h-35" controls>
+                        <source src="../media/presentation.mp4" type="video/mp4; codecs='avc1.42E01E, mp4a.40.2'" />
+                        Your browser does not support HTML video.
+                        <a href="../media/presentation.mp4">Download video</a>.
+                      </video>
                     </div>
                   </Grid>
                 </Grid>
@@ -135,8 +138,8 @@ export default class Home extends Component {
               <Grid item xs={2}></Grid>
                 <Grid item xs={4}>
                     <Grid container>
-                        <Grid item xs={12} className="p-3 color-grey-1 line-height-05">
-                            <p className="fs-3 ta-center">Contact with me</p>
+                        <Grid item xs={12} className="p-2 color-grey-3 line-height-05">
+                            <p className="fs-2-5 ta-center">Contact with me</p>
                             <div className="justify-content-center display-flex ta-center">
                                 <div className="flex-3 ">
                                     <p><LocalPhoneIcon/></p>
@@ -157,8 +160,8 @@ export default class Home extends Component {
                         <Grid item xs={12} className="p-2">
                             <div className="display-flex flex-column">
                                 <div className="line-height-05">
-                                    <p className="fs-2-5">Why me?</p>
-                                    <p className="fs-1-2 color-grey-3">Maybe next message give you answer for your question</p>
+                                    <p className="fs-2-5 color-grey-3">Why me?</p>
+                                    <p className="fs-1-2 color-grey-2">Maybe next message give you answer for your question</p>
                                     <p className="fs-1-5 color-blue-2 ta-justify line-height-2-5">
                                         My personal qualities and competencies are the main "drivers" to the goal. Working with clients, I learned to understand the undeniable importance of each individual client in the life of the whole company, and understanding and feeling the "pain" of the client, eventually leads to finding the right solution when considering his question.
                                       </p>
@@ -173,22 +176,22 @@ export default class Home extends Component {
                 </Grid>
                 <Grid item xs={2}></Grid>
               </Grid>
-              <Grid container>
+              <Grid container className="mt-3">
                 <Grid item xs={2}></Grid>
-                <Grid item xs={8} className="p-2">
+                <Grid item xs={8} className="p-2 bg-blue-1">
                     <div className="display-flex">
                         <div className="flex-5">
-                            <input type="text" placeholder="Enter your name" className="p-04-1 border-blue border-radius-03 bg-transparent fs-1 color-white-default"></input>
+                            <input type="text" placeholder="Enter your name" className="p-04-1 w-95-p border-none border-bottom bg-transparent fs-1 color-white-default transition-3"></input>
                         </div>
                         <div className="flex-5 ml-3">
-                            <input type="text" placeholder="Enter email adress" className=" p-04-1 border-blue border-radius-03 bg-transparent fs-1 color-white-default"></input>
+                            <input type="text" placeholder="Enter email adress" className="p-04-1 w-95-p border-none border-bottom bg-transparent fs-1 color-white-default transition-3"></input>
                         </div>
                     </div>
                     <div className="display-flex">
                         <div className="flex-4">
-                            <p><input type="text" placeholder="Enter subject" className="w-100-p p-04-1 border-blue border-radius-03 bg-transparent fs-1 color-white-default"></input></p>
-                            <p><textarea type="message" placeholder="Enter Message"  className="w-97-p p-04-1 w-40 h-15 border-blue border-radius-03 bg-transparent fs-1 color-white-default textarea-r-vertical"></textarea></p>
-                            <Button variant="outline-primary" className="p-07-3-5 w-100-p bg-blue-g border-none color-white-default fs-1-2 cursor-pointer box-shadow-purple">Send message</Button>{' '}
+                            <p><input type="text" placeholder="Enter subject" className="w-97-p p-04-1 border-none border-bottom bg-transparent fs-1 color-white-default transition-3"></input></p>
+                            <p><textarea type="message" placeholder="Enter Message"  className="w-97-p p-04-1 w-40 h-15 border-none bg-transparent fs-1 color-white-default textarea-r-vertical"></textarea></p>
+                            <Button variant="outline-primary" className="p-07-3-5 w-100-p bg-white-2 border-none color-grey-3 fs-1-2 cursor-pointer box-shadow-light transition-3">Send message</Button>{' '}
                         </div>
                     </div>
                 </Grid>
@@ -198,7 +201,7 @@ export default class Home extends Component {
             <Router>
               <Switch>
                 <Route exact path="/about" component={About} />
-                <Router exact path="/source" component={Source} />
+                <Route exact path="/cv" component={CV} />
               </Switch>
             </Router>
           </>

@@ -6,7 +6,7 @@ import {BrowserRouter as Router, Switch, Route} from 'react-router-dom';
 // Pages
 import Home from '../../pages/Home';
 import About from '../../pages/About';
-import Resume from '../../pages/Resume';
+import CV from '../../pages/cv';
 import Contacts from '../../pages/Contacts';
 
 
@@ -14,7 +14,7 @@ const menu =[
     {name: "Home", link: "/"},
     {name: "About", link: "/about"},
     {name: "Technologes", link: "/technologes"},
-    {name: "Resume", link: "/resume"},
+    {name: "CV", link: "/cv"},
     {name: "Source", link: "/source"},
     {name: "Blog", link: "/blog"},
     {name: "Contacts", link: "/contacts"}
@@ -27,14 +27,10 @@ export default class header extends Component {
             <Container fluid='md'>
                 <Row className="justify-content-md-center">
                   <Col xs={6}>
-                    <div className="display-flex justify-content-end">
-                      <a href="/" className="p-07-3 simple-menu-link border-01 color-blue-1 fs-1-5">Home</a>
-                      <a href="/about" className="ml-1 simple-menu-link p-07-3 simple-menu-link border-01 color-blue-1 fs-1-5">About</a>
-                      {/*<a href="" className="ml-1 simple-menu-link color-blue-1 fs-1-5">Technologes</a>*/}
-                      {/*<a href="/resume" className="ml-1 simple-menu-link color-blue-1 fs-1-5">Resume</a>*/}
-                      {/*// <a href="" className="ml-1 simple-menu-link color-blue-1 fs-1-5">Source code</a>*/}
-                      {/*<a href="" className="ml-1 simple-menu-link color-blue-1 fs-1-5">My blog</a>*/}
-                      {/*// <a href="/contacts" className="ml-1 simple-menu-link color-blue-1 fs-1-5">Contacts</a>*/}
+                    <div className="display-flex flex-column position-fixed mt-3 ml-5 w-10">
+                      <a href="/" className="p-07-3 border-none box-shadow-dark transition-3 simple-menu-link-w color-grey-3 fs-1 ta-center fw-bold cursor-pointer">Home</a>
+                      <a href="/about" className="mt-1 p-07-3 border-none box-shadow-dark transition-3 simple-menu-link-w border-01 color-grey-3 fs-1 ta-center fw-bold cursor-pointer">About</a>
+                      <a href="/cv" className="mt-1 p-07-3 bg-amber-g border-none box-shadow-amber transition-3 simple-menu-link-w border-01 color-white-default fs-1 fw-bold cursor-pointer">View CV</a>
                     </div>
                   </Col>
                 </Row>
@@ -44,7 +40,7 @@ export default class header extends Component {
               <Switch>
                 <Route exact path="/" component={Home}/>
                 <Route exact path="/about" component={About}/>
-                <Route exact path="/resume" component={Resume}/>
+                <Route exact path="/cv" component={CV}/>
                 <Route exact path="/contacts" component={Contacts}/>
               </Switch>
             </Router>
